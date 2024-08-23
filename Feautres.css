@@ -1,0 +1,617 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+}
+
+header {
+  background-color: #2f5fe2;
+  border-bottom: 2px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px; /* Padding for alignment */
+  height: 90px; /* Slim height */
+}
+
+.dark-mode {
+  background-color: #000000;
+  color: #f6f6f6;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.logo img {
+  width: 40px; /* Adjust logo size */
+  margin-right: 10px;
+}
+
+nav .logo h1 {
+  font-size: 20px; /* Adjust font size */
+  margin: 0;
+  color: #ffffff;
+}
+
+.hamburger-menu {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.hamburger-menu img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 15px; /* Space between menu items */
+  align-items: center;
+  flex-grow: 1; /* Menu items take available space */
+  justify-content: center; /* Center menu items */
+}
+
+.menu li {
+  display: flex;
+  align-items: center;
+}
+
+.menu li a {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #f1c40f; /* Base color */
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+}
+
+/* Hover effect */
+.menu li a:hover {
+  background-color: #e67e22; /* Color change on hover */
+  color: #000000; /* Text color change */
+  transform: scale(1.2); /* Smooth scale up */
+  font-weight: bolder;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); /* Add shadow for depth */
+  border-radius: 20px;
+}
+
+/* Active button styling */
+.menu li a.active {
+  font-size: x-large;
+  background-color: #ffffff; /* Same hover color to indicate active page */
+  color: #000000;
+  font-weight: bolder;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); /* Similar depth effect */
+  border-radius: 20px;
+}
+
+
+.menu li a img {
+  display: flex;
+  justify-content:center;
+  width: 20px; /* Adjust icon size */
+  height: 20px;
+  color: white;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.user-profile img {
+  width: 40px;
+  border-radius: 50%;
+  color: white;
+}
+
+
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color:  #fdf4e3; /* Black background */
+  border-right: 2px solid #333; /* Darker border */
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease; /* Smooth transition */
+  z-index: 20; /* Ensure sidebar is above content */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  color: #000000; /* White text color */
+}
+
+/* Show Sidebar */
+.sidebar.show {
+  transform: translateX(0);
+}
+
+/* Sidebar Header Styles */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between logo and close button */
+  padding: 20px;
+  font-size: 10px;
+}
+
+/* Close Button Styles */
+.close-sidebar {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #000000; /* White color for close button */
+  transition: color 0.3s ease;
+}
+
+.close-sidebar:hover {
+  color: #007BFF; /* Change color on hover */
+}
+
+/* Sidebar Menu Styles */
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1; /* Allow menu to grow and fill available space */
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between menu items */
+  overflow-y: auto; /* Scroll if needed */
+}
+
+.sidebar-menu li {
+  padding: 15px 20px;
+}
+
+.sidebar-menu li a {
+  text-decoration: none;
+  color: #000000; /* White text color */
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.sidebar-menu li a:hover {
+  color: #000000; /* Change color on hover */
+  background-color: #ff00e1; /* Darker background on hover */
+}
+
+.sidebar-menu li a img {
+  width: 20px;
+  height: 20px;
+  color: black;
+}
+
+/* Hide sidebar by default */
+.sidebar {
+  transform: translateX(-100%);
+}
+
+
+
+/* Sidebar Right */
+
+
+/* Sidebar Right */
+.sidebar-right {
+  height: 100%;
+  width: 300px; /* Width of the sidebar */
+  position: fixed;
+  top: 0;
+  right: -400px; /* Move it entirely off-screen */
+  background-color: #fdf4e3;
+  overflow-x: hidden;
+  transition: right 0.5s ease; /* Smooth transition for right property */
+  z-index: 1000;
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+}
+
+.sidebar-right.open {
+  right: 0; /* Bring it fully into view */
+}
+
+.sidebar-right .closebtn {
+  font-size: 30px;
+  cursor: pointer;
+  color: #333;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.sidebar-content {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.sidebar-content .logo {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.sidebar-content h1 {
+  font-family: 'Comic Sans MS', sans-serif;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.sidebar-content .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.sidebar-content h2 {
+  font-family: 'Comic Sans MS', sans-serif;
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.sidebar-content p {
+  font-family: 'Comic Sans MS', sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.sidebar-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.sidebar-content ul li {
+  font-family: 'Comic Sans MS', sans-serif;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.sidebar-content ul li:hover {
+  color: #555;
+}
+
+.logout-btn {
+  background-color: #ff7f7f;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-family: 'Comic Sans MS', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.logout-btn:hover {
+  background-color: #ff4f4f;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* Make sure the footer is always at the bottom */
+body, html {
+margin: 0;
+padding: 0;
+height: 100%;
+}
+
+body {
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+
+.main-content {
+flex: 1;
+/* This ensures that the content area takes up the remaining space */
+}
+
+.left-section {
+  width: 30%;
+  height: 100vh;
+  padding: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.left-side
+{
+  display: flex;
+  flex-direction: column;
+}
+/* Assuming 5 buttons */
+button {
+  font-size: x-large;
+  height: 100px; /* Adjust the subtraction value as needed */
+  margin: 20px 20px; /* Top and bottom margin combined should be less than or equal to the remaining space */
+  border-radius: 30px; /* Non-edgy look */
+  background-color: rgba(3, 54, 255, 0.1); /* Eye-catching color */
+  transition: transform 0.2s, background-color 0.2s; /* Smooth hover effect */
+}
+
+
+
+/* Hover effect */
+button:hover {
+  background-color: #0099ff; /* Slightly darker shade on hover */
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+
+button img {
+  height: 54px; /* Increased image size */
+  width: 54px; /* Increased image size */
+  padding-right: 0px; /* Increased margin */
+}
+button
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+
+main {
+  display: flex;
+  flex: 1;
+  overflow: hidden; /* Prevents scrollbars within the main area */
+}
+
+/* Overall layout for the right side */
+.right-side {
+  width: 320px; /* Adjusted width */
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center all content horizontally */
+  gap: 20px; /* Space between items */
+}
+
+/* Clock container */
+.clock-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center clocks horizontally */
+  gap: 20px; /* Space between clocks */
+}
+
+
+
+
+.analog-clock {
+  position: relative;
+  top: -20px;
+  right: -50px;
+  width:150px;  /* Adjust size as needed */
+  height: 150px; /* Adjust size as needed */
+  border: 5px solid black;
+  border-radius: 50%;
+  background: white;
+}
+
+.analog-clock .hand {
+  position: absolute;
+  width: 50%;
+  height: 6px; /* Thickness of the hands */
+  background: black;
+  top: 50%;
+  left: 50%;
+  transform-origin: 100%;
+  transform: translateX(-100%) translateY(-50%);
+}
+
+.analog-clock .hour {
+  height: 8px;
+  width: 25%; /* Length of the hour hand */
+}
+
+.analog-clock .minute {
+  height: 6px;
+  width: 35%; /* Length of the minute hand */
+}
+
+.analog-clock .second {
+  height: 4px;
+  width: 45%; /* Length of the second hand */
+  background: red; /* Usually a different color */
+}
+
+
+
+/* Flip-style digital clock styles */
+.clock {
+  position: relative;
+  top: -30px;
+  right: -40px;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.flip-digit {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 0 5px;
+  width: 40px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Calendar container styles */
+.calendar-container {
+  position: absolute;
+  top: 325px;
+  right: 10px;
+  width: 100%;
+  max-width: 280px; /* Adjusted size */
+  box-sizing: border-box;
+  background: white;
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: 'Arial', sans-serif;
+  background-color:#fff;
+}
+
+.calendar-header {
+  text-align: center;
+  font-size: 16px; /* Adjusted size */
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.calendar-table {
+  width: 30xpx;
+  border-collapse: collapse;
+}
+
+.calendar-table th {
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: bold;
+   padding: 4.5px; /*Adjusted padding */
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.calendar-table td {
+  width: 14.28%; /* 100% / 7 days */
+  height: 40px; /* Adjusted height */
+  text-align: center;
+  vertical-align: middle;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  position: relative;
+  cursor: pointer;
+  background-color: #ffffff;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.calendar-table td:last-child {
+  border-right: none;
+}
+
+.calendar-table .empty {
+  background-color: transparent;
+  cursor: default;
+}
+
+.calendar-table td:hover {
+  background-color: #ffcccb;
+}
+
+/* SOS button styles */
+.sos-button {
+  position: relative;
+  bottom: -300px;
+  right: -10px;
+  background-color: rgb(238, 61, 61);
+  color: white;
+  font-size: 15px;
+  font-weight: bolder;
+  padding:2px 20px;
+  border: none;
+  border-radius: 120px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sos-button:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+.dark-mode {
+  background-color: #121212; /* Dark mode background */
+  color: #f6f6f6; /* Light text color */
+}
+
+.theme-switch input[type="checkbox"] {
+  appearance: none;
+  width: 50px;
+  height: 25px;
+  background-color: #444;
+  border-radius: 25px;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.theme-switch input[type="checkbox"]:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 21px;
+  height: 21px;
+  background-color: #ffd700;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.theme-switch input[type="checkbox"]:checked {
+  background-color: #111;
+}
+
+.theme-switch input[type="checkbox"]:checked:before {
+  transform: translateX(25px);
+}
+.dark-mode .background-image {
+  filter: brightness(70%);
+}
