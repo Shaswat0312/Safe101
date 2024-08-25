@@ -87,6 +87,93 @@
           <p>Try out to make friends <a href="#">here</a>.</p>
       </div>
   </div>
+  <section class="how-different-section">
+    <div class="container">
+        <h1>How are we <span class="highlight">different?</span></h1>
+        <p class="description">
+            Women deserve to live in a secure and confident environment. “I’m safe” is a platform that delivers an effective and free solution to women’s safety. 
+            During an emergency or when someone is hesitant to deal directly with law enforcement, I’m safe allows their close contacts to help. Our privacy and security features are among the most stringent in the industry.
+        </p>
+        <div class="features">
+            <div class="feature-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqZisFGVBtZgZgM2__2WJnaN2EUe1jzWB5NPQAox4u-Bnx97GV" alt="Safety Solutions">
+                <h3>Free & effective safety solutions</h3>
+            </div>
+            <div class="feature-box">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzipl5UpZfvjaDR5Pz0x2gOVVLn8SdsM-SOor0G3gj65Ib_GPF" alt="Privacy & Security">
+                <h3>Most stringent privacy & security</h3>
+            </div>
+            <div class="feature-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSSK12xqAGbQVyGOuW_T6XUfUxb-hqOThHq1zrVjUkHNoqIh3_" alt="Motivated Team">
+                <h3>Highly motivated & committed team</h3>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="how-it-works">
+  <h1>How <span>SAFE101</span> works?</h1>
+  <p>SAFE101 app enhances security and helps users stay protected. It has cutting-edge technology with reliable solutions for women all around the world! I’m Safe is secure, easy to use, and reliable.</p>
+  
+  <div class="content">
+      <div class="image-container">
+          <img src="path/to/your/image.jpg" alt="I'M Safe App on Mobile">
+      </div>
+      <div class="steps">
+          <ol>
+              <li><span>Download</span> the app on your iOS or Android phone</li>
+              <li>Add your loved ones as your <span>trusted contacts</span></li>
+              <li>Click on <span>track me</span> when you feel unsafe, alone, or during other travel</li>
+              <li>Click on <span>SOS</span> when you need urgent assistance during a dangerous situation</li>
+              <li><span>Relax</span> and know that you are protected</li>
+          </ol>
+      </div>
+  </div>
+</section>
+<section class="faq-section">
+  <h1>I’m Safe app FAQs</h1>
+  
+  <div class="faq-content">
+      <div class="faq-image">
+          <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJEwnUmia_vrIFXVl_zHRbObCFBSzm7XojU_PuB7x0t0npZ5at" alt="Confused Woman Illustration">
+      </div>
+      <div class="faq-accordion">
+          <div class="faq-item">
+              <button class="faq-question">Who will receive my SOS alert?</button>
+              <div class="faq-answer">
+                  <p>Your trusted contacts will receive the SOS alert when you trigger it.</p>
+              </div>
+          </div>
+          <div class="faq-item">
+              <button class="faq-question">How do I activate the SOS features?</button>
+              <div class="faq-answer">
+                  <p>You can activate this feature by clicking the 'SOS' button on the app dashboard. Once activated, the feature sends an alert to your trusted contacts.</p>
+              </div>
+          </div>
+          <div class="faq-item">
+              <button class="faq-question">How can I add SOS contacts?</button>
+              <div class="faq-answer">
+                  <p>You can add SOS contacts by navigating to the settings within the app and selecting 'Add Trusted Contacts'.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="newsletter-section">
+  <h1>Join Our Newsletter</h1>
+  <p>Enter your email and we’ll keep you posted with news and updates!</p>
+
+  <form class="newsletter-form">
+      <input type="email" placeholder="Your Email" required>
+      <input type="text" placeholder="Confirm Email" required>
+      <!-- Replace the following div with the actual reCAPTCHA widget code -->
+      <div class="recaptcha">
+          <p>I'm not a robot</p>
+          <!-- Add the reCAPTCHA widget here -->
+      </div>
+      <button type="submit">Subscribe</button>
+  </form>
+</section>
 
 
     <footer class="footer">
@@ -136,6 +223,32 @@
       
     
     
-    <script src="Base.js"></script>
+      <script>
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            item.querySelector('.faq-question').addEventListener('click', () => {
+                const openItem = document.querySelector('.faq-open');
+                
+                toggleItem(item);
+                
+                if (openItem && openItem !== item) {
+                    toggleItem(openItem);
+                }
+            });
+        });
+
+        const toggleItem = (item) => {
+            const faqAnswer = item.querySelector('.faq-answer');
+
+            if (item.classList.contains('faq-open')) {
+                faqAnswer.removeAttribute('style');
+                item.classList.remove('faq-open');
+            } else {
+                faqAnswer.style.height = faqAnswer.scrollHeight + 'px';
+                item.classList.add('faq-open');
+            }
+        }
+    </script>
 </body>
 </html>
