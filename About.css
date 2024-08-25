@@ -1,0 +1,137 @@
+
+section h1
+{
+ text-align: center;
+ font-size: 60px;
+ font-weight: bolder;
+ text-decoration: underline;
+}
+section h1:hover
+{
+    transform: scale(1.1);
+    transition:  transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+
+}
+.intro
+{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.intro .para
+{
+    transform: scale(1);
+    transition:  transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+    border-right: 6px groove black;
+    border-left: 6px groove black;
+    padding: 10px;
+    border-radius: 15px;
+    width: 50vw;
+}
+.intro .para:hover
+{
+    display: inline-block;
+    transform: scale(1.1);
+    background-color: black;
+    color: rgb(217, 0, 255);
+    padding: 20px;
+    border: 6px  solid rgb(0, 236, 94);
+}
+.intro .pico img
+{
+    height: 40vh;
+    width: 40vw;;
+}
+.mission
+{
+    height: 80vh;
+    width: 80vw;
+    margin: 116px;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.miss
+{
+    background-color: rgba(rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0));
+    color: rgb(0, 0, 0);
+    transition:  transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+    transform: scale(1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid black;
+    border-radius: 20px;
+    height: 60vh;
+    width: 30vw;
+    
+}
+.miss h2
+{  
+
+    text-align: center;
+    font-size: xx-large;
+    text-decoration:underline;
+}
+.pd
+{
+   
+    padding-top: 90px;
+    height: 50vh;
+    width: 25vw;
+    display: flex;
+    font-size: xx-large;
+}
+
+.Viss
+{
+    transition:  transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+    transform: scale(1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid black;
+    border-radius: 20px;
+    height: 60vh;
+    width: 30vw;
+}
+.Viss h2
+{  
+
+    text-align: center;
+    font-size: xx-large;
+    text-decoration:underline;
+}
+.p
+{
+   
+    padding-top: 60px;
+    height: 50vh;
+    width: 25vw;
+    display: flex;
+    font-size: xx-large;
+}
+.miss:hover
+{
+
+    transform: scale(1.1);
+    transition:  transform 0.3s ease-in-out;
+}
+
+.Viss:hover
+{
+  
+    transform: scale(1.1);
+   
+}

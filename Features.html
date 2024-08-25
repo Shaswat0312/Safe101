@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Safe101 - Features</title>
     <link rel="icon" type="image/x-icon" href="Logo.png">
-    <link rel="stylesheet" href="Navbar.css">
     <link rel="stylesheet" href="Feautres.css">
+    <link rel="stylesheet" href="Navbar.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
 </head>
@@ -31,9 +31,7 @@
                 <li><a href="Services.html"><img src="https://img.icons8.com/material-outlined/24/000000/groups.png" alt="Services"> Services</a></li>
                 <li><a href="Contact.html"><img src="https://img.icons8.com/material-outlined/24/000000/help.png" alt="Contact"> Contact</a></li>
             </ul>
-            <img id="sun-icon" src="https://cdn-icons-png.flaticon.com/512/1146/1146850.png" alt="Sun Icon" class="icon" onclick="toggleLightMode()">
-        <img id="moon-icon" src="https://cdn-icons-png.flaticon.com/512/1146/1146852.png" alt="Moon Icon" class="icon" onclick="toggleDarkMode()">
-        &nbsp
+           
             <div class="user-profile" id="profile-pic">
                 <img src="https://img.icons8.com/ios-filled/50/000000/user-male-circle.png" alt="User">
             </div>
@@ -83,7 +81,7 @@
 
 
 
-
+<div>
     <main>
         <aside class="left-side">
             <button class="feature-btn">
@@ -116,22 +114,24 @@
         
 
         <aside class="right-side">
-            <div class="clock-container">
-                <!-- Analog Clock -->
-                <div class="analog-clock" id="analog-clock">
-                    <div class="hour"></div>
-                    <div class="minute"></div>
-                    <div class="second"></div>
-                </div>
+          
         
                 <!-- Flip Digital Clock -->
                 <div class="clock" id="flip-clock">
-                    <div class="flip-digit" id="hours">00</div>:
-                    <div class="flip-digit" id="minutes">00</div>:
-                    <div class="flip-digit" id="seconds">00</div>
+                    <div class="flip-digit" id="hours">
+                        <div class="digit-top">00</div>
+                        <div class="digit-bottom">00</div>
+                    </div>:
+                    <div class="flip-digit" id="minutes">
+                        <div class="digit-top">00</div>
+                        <div class="digit-bottom">00</div>
+                    </div>:
+                    <div class="flip-digit" id="seconds">
+                        <div class="digit-top">00</div>
+                        <div class="digit-bottom">00</div>
+                    </div>
                 </div>
-            </div>
-        
+                
             <!-- Calendar -->
             <div class="calendar-container">
                 <div class="calendar-header">
@@ -206,8 +206,61 @@
             <!-- SOS Button -->
             <button class="sos-button">SOS Receiver</button>
         </aside>
+  </div>
     
-          
+
+    <div class="foot">
+    
+
+      
+<footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="Logo.png" alt="SAFE101 Logo">
+        <h2>SAFE101</h2>
+        <p>SAFE101 is an innovative app that uses cutting-edge technology to ensure the user's safety at all times. This app makes safety within every woman’s reach.</p>
+      </div>
+      
+      <div class="footer-links">
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Features.html">Features</a></li>
+          <li><a href="Blogs.html">Blogs</a></li>
+          <li><a href="Help.html">Help</a></li>
+          <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-connect">
+       &nbsp
+       <br><br>
+        <p>India: +91 6969696969</p>
+        <p>Email: <a href="mailto:info@safe101.app">info@safe101.app</a></p>
+      </div>
+      
+      <div class="footer-download">
+        <h3>Download now</h3>
+        <a href="#"><img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" alt="Play Store" height="65vh" width="165vw"></a>
+        <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS8JWN0o1lukA7fuFuxCw53m_sx0haKyKBqg&s" alt="Play Store" height="45vh" width="145vw"></a>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <ul>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Disclaimer Policy</a></li>
+        <li><a href="#">Refund and Cancellation Policy</a></li>
+        <li><a href="#">Shipping & Delivery Policy</a></li>
+      </ul>
+      <p>Copyright © 2024 SAFE101 Pty Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+  
+
+
+</div>
     <script src="Base.js"></script>
     <script src="Feautres.js"></script>
 </body>
