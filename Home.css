@@ -1,6 +1,6 @@
 body
 {
-    width: 100vw;
+    width: 99vw;
 }
 .container {
     display: flex;
@@ -10,18 +10,17 @@ body
     padding: 20px;
     background-color: white;
     border-radius: 15px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
    
 }
 
 .image-container img {
-    width: 25vw;
-    height: 50vh;
+    width: 145vw;
+    height: 80vh;
     border-radius: 15px;
 }
 
 .text-container {
-    margin-top: 100px;
+    margin-top: 10px;
     height: 100vh;
     margin-left: 20px;
 }
@@ -47,13 +46,15 @@ a:hover {
 
 .container {
 
-    margin: 0 auto;
-    padding: 20px;
     text-align: center;
 }
-
+.how-different-section
+{
+    display: flex;
+   
+}
 .how-different-section h1 {
-    font-size: 36px;
+    font-size: 46px;
     color: #333;
     margin-bottom: 20px;
 }
@@ -63,7 +64,7 @@ a:hover {
 }
 
 .description {
-    font-size: 18px;
+    font-size: 28px;
     margin-bottom: 40px;
     color: #555;
     max-width: 900px;
@@ -128,6 +129,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    width: 100vw;
 }
 
 .image-container img {
