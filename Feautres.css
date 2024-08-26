@@ -11,8 +11,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 20px; /* Padding for alignment */
-  height: 90px; /* Slim height */
+  padding: 0 20px; 
+  height: 90px; 
 }
 
 .dark-mode {
@@ -42,12 +42,12 @@ nav {
 }
 
 .logo img {
-  width: 40px; /* Adjust logo size */
+  width: 40px; 
   margin-right: 10px;
 }
 
 nav .logo h1 {
-  font-size: 20px; /* Adjust font size */
+  font-size: 20px; 
   margin: 0;
   color: #ffffff;
 }
@@ -70,10 +70,10 @@ nav .logo h1 {
   display: flex;
   margin: 0;
   padding: 0;
-  gap: 15px; /* Space between menu items */
+  gap: 15px; 
   align-items: center;
-  flex-grow: 1; /* Menu items take available space */
-  justify-content: center; /* Center menu items */
+  flex-grow: 1; 
+  justify-content: center; 
 }
 
 .menu li {
@@ -85,7 +85,7 @@ nav .logo h1 {
   display: flex;
   justify-content: center;
   padding: 10px 20px;
-  background-color: #f1c40f; /* Base color */
+  background-color: #f1c40f; 
   color: #2c3e50;
   text-decoration: none;
   font-weight: bold;
@@ -95,21 +95,21 @@ nav .logo h1 {
 
 /* Hover effect */
 .menu li a:hover {
-  background-color: #e67e22; /* Color change on hover */
-  color: #000000; /* Text color change */
-  transform: scale(1.2); /* Smooth scale up */
+  background-color: #e67e22; 
+  color: #000000;
+  transform: scale(1.2); 
   font-weight: bolder;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); /* Add shadow for depth */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); 
   border-radius: 20px;
 }
 
 /* Active button styling */
 .menu li a.active {
   font-size: x-large;
-  background-color: #ffffff; /* Same hover color to indicate active page */
+  background-color: #ffffff; 
   color: #000000;
   font-weight: bolder;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); /* Similar depth effect */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
   border-radius: 20px;
 }
 
@@ -117,7 +117,7 @@ nav .logo h1 {
 .menu li a img {
   display: flex;
   justify-content:center;
-  width: 20px; /* Adjust icon size */
+  width: 20px; 
   height: 20px;
   color: white;
 }
@@ -143,15 +143,15 @@ nav .logo h1 {
   left: 0;
   height: 100%;
   width: 250px;
-  background-color:  #fdf4e3; /* Black background */
-  border-right: 2px solid #333; /* Darker border */
+  background-color:  #fdf4e3; 
+  border-right: 2px solid #333; 
   display: flex;
   flex-direction: column;
   transform: translateX(-100%);
-  transition: transform 0.3s ease; /* Smooth transition */
-  z-index: 20; /* Ensure sidebar is above content */
+  transition: transform 0.3s ease; 
+  z-index: 20; 
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  color: #000000; /* White text color */
+  color: #000000; 
 }
 
 /* Show Sidebar */
@@ -163,7 +163,7 @@ nav .logo h1 {
 .sidebar-header {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Space between logo and close button */
+  justify-content: space-between; 
   padding: 20px;
   font-size: 10px;
 }
@@ -174,12 +174,12 @@ nav .logo h1 {
   border: none;
   font-size: 24px;
   cursor: pointer;
-  color: #000000; /* White color for close button */
+  color: #000000; 
   transition: color 0.3s ease;
 }
 
 .close-sidebar:hover {
-  color: #007BFF; /* Change color on hover */
+  color: #007BFF; 
 }
 
 /* Sidebar Menu Styles */
@@ -187,11 +187,11 @@ nav .logo h1 {
   list-style: none;
   padding: 0;
   margin: 0;
-  flex: 1; /* Allow menu to grow and fill available space */
+  flex: 1; 
   display: flex;
   flex-direction: column;
-  gap: 10px; /* Space between menu items */
-  overflow-y: auto; /* Scroll if needed */
+  gap: 10px; 
+  overflow-y: auto; 
 }
 
 .sidebar-menu li {
@@ -200,7 +200,7 @@ nav .logo h1 {
 
 .sidebar-menu li a {
   text-decoration: none;
-  color: #000000; /* White text color */
+  color: #000000; 
   font-size: 16px;
   display: flex;
   align-items: center;
@@ -209,8 +209,8 @@ nav .logo h1 {
 }
 
 .sidebar-menu li a:hover {
-  color: #000000; /* Change color on hover */
-  background-color: #ff00e1; /* Darker background on hover */
+  color: #000000; 
+  background-color: #ff00e1; 
 }
 
 .sidebar-menu li a img {
@@ -228,20 +228,20 @@ nav .logo h1 {
  /* Sidebar Right */
  .sidebar-right {
   height: 100%;
-  width: 300px; /* Width of the sidebar */
+  width: 300px; 
   position: fixed;
   top: 0;
-  right: -400px; /* Move it entirely off-screen */
+  right: -400px; 
   background-color: #fdf4e3;
   overflow-x: hidden;
-  transition: right 0.5s ease; /* Smooth transition for right property */
+  transition: right 0.5s ease; 
   z-index: 1000;
   padding: 20px;
   box-shadow: -2px 0 5px rgba(0,0,0,0.5);
 }
 
 .sidebar-right.open {
-  right: 0; /* Bring it fully into view */
+  right: 0; 
 }
 
 .sidebar-right .closebtn {
@@ -349,7 +349,6 @@ min-height: 100vh;
 
 .main-content {
 flex: 1;
-/* This ensures that the content area takes up the remaining space */
 }
 
 .left-section {
@@ -369,26 +368,25 @@ flex: 1;
 /* Assuming 5 buttons */
 button {
   font-size: x-large;
-  height: 100px; /* Adjust the subtraction value as needed */
-  margin: 20px 20px; /* Top and bottom margin combined should be less than or equal to the remaining space */
-  border-radius: 30px; /* Non-edgy look */
-  background-color: rgba(3, 54, 255, 0.1); /* Eye-catching color */
-  transition: transform 0.2s, background-color 0.2s; /* Smooth hover effect */
+  height: 100px; 
+  margin: 20px 20px; 
+  border-radius: 30px; 
+  background-color: rgba(3, 54, 255, 0.1); 
+  transition: transform 0.2s, background-color 0.2s; 
 }
 
 
 
 /* Hover effect */
 button:hover {
-  background-color: #0099ff; /* Slightly darker shade on hover */
-  transform: scale(1.05); /* Slightly increase size on hover */
+  background-color: #0099ff; 
+  transform: scale(1.05); 
 }
 
-
 button img {
-  height: 54px; /* Increased image size */
-  width: 54px; /* Increased image size */
-  padding-right: 0px; /* Increased margin */
+  height: 54px; 
+  width: 54px; 
+  padding-right: 0px; 
 }
 button
 {
@@ -402,7 +400,7 @@ button
 main {
   display: flex;
   flex: 1;
-  overflow: hidden; /* Prevents scrollbars within the main area */
+  overflow: hidden;
 }
 
 
@@ -414,22 +412,22 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 36px; /* Larger font size for a more prominent look */
+  font-size: 36px; 
 }
 
 .flip-digit {
   background: linear-gradient(145deg, #1e1e1e, #0d0d0d);
-  color: #00ffcc; /* Bright color for digits */
+  color: #00ffcc; 
   padding: 20px;
   border-radius: 8px;
   margin: 0 8px;
   width: 60px;
   text-align: center;
-  font-family: 'Orbitron', sans-serif; /* Futuristic font */
+  font-family: 'Orbitron', sans-serif; 
   position: relative;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.5); /* Neon glow effect */
-  transform: perspective(500px) rotateX(0deg); /* 3D flip effect */
+  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.5); 
+  transform: perspective(500px) rotateX(0deg); 
   transition: transform 0.6s ease-in-out;
 }
 
@@ -443,10 +441,10 @@ main {
 
 .flip-digit {
   position: relative;
-  width: 60px; /* Adjust width */
-  height: 80px; /* Adjust height */
+  width: 60px; 
+  height: 80px; 
   perspective: 1000px;
-  margin: 0 10px; /* Space between digits */
+  margin: 0 10px; 
 }
 
 .digit-top, .digit-bottom {
@@ -489,10 +487,10 @@ main {
 /* Calendar container styles */
 .calendar-container {
   position: absolute;
-  top: 280px; /* Adjusted position from the top */
-  right: 50px; /* Adjusted position from the right */
+  top: 280px; 
+  right: 50px; 
   width: 100%;
-  max-width: 280px; /* Adjusted size */
+  max-width: 280px; 
   box-sizing: border-box;
   background: white;
   border: 2px solid #333;
@@ -501,18 +499,18 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   font-family: 'Arial', sans-serif;
   background-color: #fff;
-  z-index: 10; /* Ensure it stays above other content */
+  z-index: 10; 
 }
 
 .calendar-header {
   text-align: center;
-  font-size: 16px; /* Adjusted size */
+  font-size: 16px; 
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .calendar-table {
-  width: 100%; /* Adjusted to fill container width */
+  width: 100%; 
   border-collapse: collapse;
 }
 
@@ -520,14 +518,14 @@ main {
   background-color: #000000;
   color: #ffffff;
   font-weight: bold;
-  padding: 4.5px; /* Adjusted padding */
+  padding: 4.5px; 
   text-align: center;
   border-bottom: 1px solid #ddd;
 }
 
 .calendar-table td {
-  width: 14.28%; /* 100% / 7 days */
-  height: 40px; /* Adjusted height */
+  width: 14.28%; 
+  height: 40px;
   text-align: center;
   vertical-align: middle;
   border-bottom: 1px solid #ddd;
@@ -555,8 +553,8 @@ main {
 /* SOS button styles */
 .sos-button {
   position: absolute;
-  bottom: 20px; /* Adjusted position from the bottom */
-  right: 60px; /* Adjusted position from the right */
+  bottom: 20px;
+  right: 60px; 
   background-color: rgb(238, 61, 61);
   color: white;
   font-size: 15px;
@@ -577,14 +575,12 @@ main {
 .main-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Ensures the container takes at least the full viewport height */
+  min-height: 100vh; 
 }
 
 .content {
-  flex: 1; /* Takes up all available space, pushing the footer to the bottom */
+  flex: 1; 
 }
-
-
 
 
 .logout-btn {
