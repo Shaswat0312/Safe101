@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="RateUs.css">
     <title>Safe101 Rating Page</title>
 </head>
+
 <body>
     <div class="container">
         <img src="Logo.png" alt="Safe101 Logo" class="logo">
@@ -64,14 +66,18 @@
             <p id="popup-message"></p>
             <div class="popup-buttons">
                 <button class="home-icon" onclick="goHome()">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M8 3.293l6.364 6.364a.5.5 0 0 1-.708.708l-1.819-1.819V14a.5.5 0 0 1-.5.5h-2.5a.5.5 0 0 1-.5-.5V9.5H6v4.5a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V8.546L.707 10.365a.5.5 0 0 1-.707-.708l6.364-6.364a1 1 0 0 1 1.414 0z"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 3.293l6.364 6.364a.5.5 0 0 1-.708.708l-1.819-1.819V14a.5.5 0 0 1-.5.5h-2.5a.5.5 0 0 1-.5-.5V9.5H6v4.5a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V8.546L.707 10.365a.5.5 0 0 1-.707-.708l6.364-6.364a1 1 0 0 1 1.414 0z" />
                     </svg>
                     Home
                 </button>
                 <button class="logout-icon" onclick="logout()">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M5 1a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2h-1V1a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2H5V1zm6 4V1H5v4H2v1h12V5h-3zM1 5v6a2 2 0 0 0 2 2h1v-1H3a1 1 0 0 1-1-1V6h12v4a1 1 0 0 1-1 1h-1v1h1a2 2 0 0 0 2-2V5H1z"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M5 1a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2h-1V1a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2H5V1zm6 4V1H5v4H2v1h12V5h-3zM1 5v6a2 2 0 0 0 2 2h1v-1H3a1 1 0 0 1-1-1V6h12v4a1 1 0 0 1-1 1h-1v1h1a2 2 0 0 0 2-2V5H1z" />
                     </svg>
                     Logout
                 </button>
@@ -79,61 +85,61 @@
         </div>
     </div>
     <script>
-    function submitRating() {
-    const overallRating = getRating('overall-rating');
-    const easeRating = getRating('ease-rating');
-    const usabilityRating = getRating('usability-rating');
-    // Add more ratings here if needed
+        function submitRating() {
+            const overallRating = getRating('overall-rating');
+            const easeRating = getRating('ease-rating');
+            const usabilityRating = getRating('usability-rating');
+            // Add more ratings here if needed
 
-    const allRatings = [overallRating, easeRating, usabilityRating];
-    const allAboveThree = allRatings.every(rating => rating >= 3);
+            const allRatings = [overallRating, easeRating, usabilityRating];
+            const allAboveThree = allRatings.every(rating => rating >= 3);
 
-    const popupMessage = document.getElementById('popup-message');
-    const ratingContainer = document.getElementById('rating-container');
-    const blurBackground = document.getElementById('blur-background');
-    const popupCard = document.getElementById('popup-card');
+            const popupMessage = document.getElementById('popup-message');
+            const ratingContainer = document.getElementById('rating-container');
+            const blurBackground = document.getElementById('blur-background');
+            const popupCard = document.getElementById('popup-card');
 
-    if (allAboveThree) {
-        popupMessage.textContent = 'Thank you for your feedback!';
-    } else {
-        popupMessage.textContent = 'We will try our best to improve.';
-    }
+            if (allAboveThree) {
+                popupMessage.textContent = 'Thank you for your feedback!';
+            } else {
+                popupMessage.textContent = 'We will try our best to improve.';
+            }
 
-    ratingContainer.classList.add('hidden');
-    blurBackground.classList.remove('hidden');
-    popupCard.style.display = 'block';
-}
-
-function getRating(ratingName) {
-    const ratingInputs = document.getElementsByName(ratingName);
-    let rating = 0;
-    for (let i = ratingInputs.length - 1; i >= 0; i--) {
-        if (ratingInputs[i].checked) {
-            rating = parseInt(ratingInputs[i].value);
-            break;
+            ratingContainer.classList.add('hidden');
+            blurBackground.classList.remove('hidden');
+            popupCard.style.display = 'block';
         }
-    }
-    return rating;
-}
 
-function closePopup() {
-    const ratingContainer = document.getElementById('rating-container');
-    const blurBackground = document.getElementById('blur-background');
-    const popupCard = document.getElementById('popup-card');
+        function getRating(ratingName) {
+            const ratingInputs = document.getElementsByName(ratingName);
+            let rating = 0;
+            for (let i = ratingInputs.length - 1; i >= 0; i--) {
+                if (ratingInputs[i].checked) {
+                    rating = parseInt(ratingInputs[i].value);
+                    break;
+                }
+            }
+            return rating;
+        }
 
-    ratingContainer.classList.remove('hidden');
-    blurBackground.classList.add('hidden');
-    popupCard.style.display = 'none';
-}
+        function closePopup() {
+            const ratingContainer = document.getElementById('rating-container');
+            const blurBackground = document.getElementById('blur-background');
+            const popupCard = document.getElementById('popup-card');
 
-function goHome() {
-    window.location.href = 'home.html'; // Change to your actual home page URL
-}
+            ratingContainer.classList.remove('hidden');
+            blurBackground.classList.add('hidden');
+            popupCard.style.display = 'none';
+        }
 
-function logout() {
-    window.location.href = 'LoginPage.html'; // Change to your actual logout URL
-}
+        function goHome() {
+            window.location.href = 'home.html'; // Change to your actual home page URL
+        }
+
+        function logout() {
+            window.location.href = 'LoginPage.html'; // Change to your actual logout URL
+        }
     </script>
 </body>
-</html>
 
+</html>
