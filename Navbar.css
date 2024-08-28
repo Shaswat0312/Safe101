@@ -7,13 +7,13 @@ body {
   }
   
   header {
-    background-color: #2f5fe2;
+    background-color: #503a9c;
     border-bottom: 2px solid #ddd;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 20px; /* Padding for alignment */
-    height: 90px; /* Slim height */
+    padding: 0 20px;
+    height: 90px;
   }
   
 
@@ -33,16 +33,16 @@ body {
   .logo {
     display: flex;
     align-items: center;
-    margin-right: 15px;
+    /* margin-right: 15px; */
   }
   
- .logo img {
-    width: 40px; /* Adjust logo size */
+.logo img {
+    width: 60px;
     margin-right: 10px;
   }
   
   nav .logo h1 {
-    font-size: 20px; /* Adjust font size */
+    font-size: 20px;
     margin: 0;
     color: #ffffff;
   }
@@ -54,8 +54,8 @@ body {
   }
   
   .hamburger-menu img {
-    width: 24px;
-    height: 24px;
+    width: 26px;
+    height: 30px;
     cursor: pointer;
     color: #fff;
   }
@@ -65,10 +65,10 @@ body {
     display: flex;
     margin: 0;
     padding: 25px;
-    gap: 15px; /* Space between menu items */
+    gap: 15px;
     align-items: center;
-    flex-grow: 1; /* Menu items take available space */
-    justify-content: center; /* Center menu items */
+    flex-grow: 1;
+    justify-content: center; 
   }
   
   .menu li {
@@ -81,7 +81,7 @@ body {
     justify-content: center;
     padding: 10px 20px;
     margin-left: 10px;
-    background-color: #f1c40f; /* Base color */
+    background-color: #f1c40f;
     color: #2c3e50;
     text-decoration: none;
     font-weight: bold;
@@ -91,21 +91,21 @@ body {
   
   /* Hover effect */
   .menu li a:hover {
-    background-color: #e67e22; /* Color change on hover */
-    color: #000000; /* Text color change */
-    transform: scale(1.2); /* Smooth scale up */
+    background-color: #e67e22;
+    color: #000000;
+    transform: scale(1.2);
     font-weight: bolder;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); /* Add shadow for depth */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
     border-radius: 20px;
   }
   
   /* Active button styling */
   .menu li a.active {
     font-size: x-large;
-    background-color: #ffffff; /* Same hover color to indicate active page */
+    background-color: #ffffff; 
     color: #000000;
     font-weight: bolder;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); /* Similar depth effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
     border-radius: 20px;
   }
   
@@ -113,7 +113,7 @@ body {
   .menu li a img {
     display: flex;
     justify-content:center;
-    width: 20px; /* Adjust icon size */
+    width: 20px;
     height: 20px;
     color: white;
   }
@@ -125,12 +125,16 @@ body {
   }
   
   .user-profile img {
-    width: 40px;
-    border-radius: 50%;
+    width: 60px;
+    /* border-radius: 50%; */
     color: white;
   }
-
   
+  .user-profile img:hover {
+    /* width: 80px; */
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+  }
 
 /* Sidebar Styles */
 .sidebar {
@@ -139,15 +143,15 @@ body {
     left: 0;
     height: 100%;
     width: 250px;
-    background-color:  #fdf4e3; /* Black background */
-    border-right: 2px solid #333; /* Darker border */
+    background-color:  #fdf4e3; 
+    border-right: 2px solid #333;
     display: flex;
     flex-direction: column;
     transform: translateX(-100%);
-    transition: transform 0.3s ease; /* Smooth transition */
-    z-index: 20; /* Ensure sidebar is above content */
+    transition: transform 0.3s ease; 
+    z-index: 20;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    color: #000000; /* White text color */
+    color: #000000; 
   }
   
   /* Show Sidebar */
@@ -159,7 +163,7 @@ body {
   .sidebar-header {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Space between logo and close button */
+    justify-content: space-between;
     padding: 20px;
     font-size: 10px;
   }
@@ -170,12 +174,12 @@ body {
     border: none;
     font-size: 24px;
     cursor: pointer;
-    color: #000000; /* White color for close button */
+    color: #000000; 
     transition: color 0.3s ease;
   }
   
   .close-sidebar:hover {
-    color: #007BFF; /* Change color on hover */
+    color: #007BFF; 
   }
   
   /* Sidebar Menu Styles */
@@ -183,11 +187,11 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-    flex: 1; /* Allow menu to grow and fill available space */
+    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Space between menu items */
-    overflow-y: auto; /* Scroll if needed */
+    gap: 10px; 
+    overflow-y: auto; 
   }
   
   .sidebar-menu li {
@@ -196,7 +200,7 @@ body {
   
   .sidebar-menu li a {
     text-decoration: none;
-    color: #000000; /* White text color */
+    color: #000000;
     font-size: 16px;
     display: flex;
     align-items: center;
@@ -205,8 +209,8 @@ body {
   }
   
   .sidebar-menu li a:hover {
-    color: #000000; /* Change color on hover */
-    background-color: #ff00e1; /* Darker background on hover */
+    color: #000000;
+    background-color: #ff00e1; 
   }
   
   .sidebar-menu li a img {
@@ -217,13 +221,8 @@ body {
   
   /* Hide sidebar by default */
   .sidebar {
-    transform: translateX(-100%);
+    transform: translateX(-200%);
   }
-
-
-
-  /* Sidebar Right */
-
 
  /* Sidebar Right */
 .sidebar-right {
@@ -238,7 +237,7 @@ body {
     z-index: 1000;
     padding: 20px;
     box-shadow: -2px 0 5px rgba(0,0,0,0.5);
-}
+} 
 
 .sidebar-right.open {
     right: 0; /* Bring it fully into view */
@@ -260,8 +259,8 @@ body {
 
 .sidebar-content .logo {
     width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
+    /* height: 50px; */
+    /* margin-bottom: 10px; */
 }
 
 .sidebar-content h1 {
@@ -339,7 +338,7 @@ body {
 body, html {
   margin: 0;
   padding: 0;
-  height: 100%;
+  width: 100%;
 }
 
 body {
@@ -350,14 +349,13 @@ body {
 
 .main-content {
   flex: auto;
-  /* This ensures that the content area takes up the remaining space */
 }
 
 .footer {
-  background-color: #6A245E; /* Dark purple background */
-  color: #ffffff; /* White text color */
+  background-color: #503a9c; 
+  color: #ffffff; 
   padding: 40px 0;
-  margin-top: auto; /* Push the footer to the bottom */
+  margin-top: auto; 
 }
 
 .footer-content {
@@ -370,18 +368,18 @@ body {
 }
 
 .footer-logo img {
-  max-width: 50px; /* Adjust according to your logo size */
+  width: 100px; 
   margin-bottom: 10px;
 }
 
 .footer-logo h2 {
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 10px;
 }
 
 .footer-logo p {
   max-width: 300px;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1.5;
 }
 
@@ -397,7 +395,7 @@ body {
 .footer-links ul li a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .footer-links ul li a:hover {
@@ -406,7 +404,7 @@ body {
 
 .footer-connect h3, .footer-download h3 {
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 35px;
 }
 
 .footer-connect ul {
@@ -424,18 +422,24 @@ body {
 
 .footer-connect p {
   color: #fdf4e3;
-  font-size: 14px;
+  font-size: 20px;
   margin: 5px 0;
 }
 
-.footer-download a {
+/* .footer-download a {
   color: #fdf4e3;
   display: inline-block;
   margin: 0 10px 20px 0;
+} */
+
+.footer-download div { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-bottom {
-  background-color: #4B1C4E; /* Slightly darker purple */
+  background-color: #37276f; 
   padding: 20px 0;
   text-align: center;
   margin-top: 40px;

@@ -1,9 +1,8 @@
-html, body {
+/* html, body {
   height: 500%;
   margin: 0;
   padding: 0;
- 
-}
+} */
 
 /* header {
   background-color: #2f5fe2;
@@ -20,7 +19,7 @@ html, body {
   color: #f6f6f6;
 } */
 
-nav {
+/* nav {
   display: flex;
   width: 100%;
   padding-top: 25px;
@@ -91,20 +90,20 @@ nav .logo h1 {
   font-weight: bold;
   border-radius: 8px;
   transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
-}
+} */
 
 /* Hover effect */
-.menu li a:hover {
+/* .menu li a:hover {
   background-color: #e67e22; 
   color: #000000;
   transform: scale(1.2); 
   font-weight: bolder;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); 
   border-radius: 20px;
-}
+} */
 
 /* Active button styling */
-.menu li a.active {
+/* .menu li a.active {
   font-size: x-large;
   background-color: #ffffff; 
   color: #000000;
@@ -132,12 +131,10 @@ nav .logo h1 {
   width: 40px;
   border-radius: 50%;
   color: white;
-}
-
-
+} */
 
 /* Sidebar Styles */
-.sidebar {
+/* .sidebar {
   position: fixed;
   top: 0;
   left: 0;
@@ -152,38 +149,38 @@ nav .logo h1 {
   z-index: 20; 
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   color: #000000; 
-}
+} */
 
 /* Show Sidebar */
-.sidebar.show {
+/* .sidebar.show {
   transform: translateX(0);
-}
+} */
 
 /* Sidebar Header Styles */
-.sidebar-header {
+/* .sidebar-header {
   display: flex;
   align-items: center;
   justify-content: space-between; 
   padding: 20px;
   font-size: 10px;
-}
+} */
 
 /* Close Button Styles */
-.close-sidebar {
+/* .close-sidebar {
   background: transparent;
   border: none;
   font-size: 24px;
   cursor: pointer;
   color: #000000; 
   transition: color 0.3s ease;
-}
+} */
 
-.close-sidebar:hover {
+/* .close-sidebar:hover {
   color: #007BFF; 
-}
+} */
 
 /* Sidebar Menu Styles */
-.sidebar-menu {
+/* .sidebar-menu {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -217,16 +214,15 @@ nav .logo h1 {
   width: 20px;
   height: 20px;
   color: black;
-}
+} */
 
 /* Hide sidebar by default */
-.sidebar {
+/* .sidebar {
   transform: translateX(-100%);
-}
+} */
 
-
- /* Sidebar Right */
- .sidebar-right {
+/* Sidebar Right */
+/* .sidebar-right {
   height: 100%;
   width: 300px; 
   position: fixed;
@@ -333,9 +329,10 @@ nav .logo h1 {
   position: absolute;
   top: 20px;
   right: 20px;
-}
+} */
+
 /* Make sure the footer is always at the bottom */
-body, html {
+/* body, html {
 margin: 0;
 padding: 0;
 height: 100%;
@@ -349,7 +346,7 @@ min-height: 100vh;
 
 .main-content {
 flex: 1;
-}
+} */
 
 .left-section {
   width: 30%;
@@ -360,49 +357,45 @@ flex: 1;
   justify-content: space-between;
   box-sizing: border-box;
 }
-.left-side
-{
+
+.left-side {
   display: flex;
   flex-direction: column;
 }
+
 /* Assuming 5 buttons */
 button {
   font-size: x-large;
-  height: 100px; 
-  margin: 20px 20px; 
-  border-radius: 30px; 
-  background-color: rgba(3, 54, 255, 0.1); 
-  transition: transform 0.2s, background-color 0.2s; 
+  height: 100px;
+  margin: 20px 20px;
+  border-radius: 30px;
+  background-color: rgba(3, 54, 255, 0.1);
+  transition: transform 0.2s, background-color 0.2s;
 }
-
-
 
 /* Hover effect */
 button:hover {
-  background-color: #0099ff; 
-  transform: scale(1.05); 
+  background-color: #0099ff;
+  transform: scale(1.05);
 }
 
 button img {
-  height: 54px; 
-  width: 54px; 
-  padding-right: 0px; 
+  height: 54px;
+  width: 54px;
+  padding-right: 0px;
 }
-button
-{
+
+button {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-
-
 
 main {
   display: flex;
   flex: 1;
   overflow: hidden;
 }
-
 
 /* Flip-style digital clock styles */
 /* Futuristic Flip-style digital clock styles */
@@ -412,22 +405,22 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 36px; 
+  font-size: 36px;
 }
 
 .flip-digit {
   background: linear-gradient(145deg, #1e1e1e, #0d0d0d);
-  color: #00ffcc; 
+  color: #00ffcc;
   padding: 20px;
   border-radius: 8px;
   margin: 0 8px;
   width: 60px;
   text-align: center;
-  font-family: 'Orbitron', sans-serif; 
+  font-family: "Orbitron", sans-serif;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.5); 
-  transform: perspective(500px) rotateX(0deg); 
+  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.5);
+  transform: perspective(500px) rotateX(0deg);
   transition: transform 0.6s ease-in-out;
 }
 
@@ -435,19 +428,20 @@ main {
 .clock {
   display: flex;
   align-items: center;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 48px;
 }
 
 .flip-digit {
   position: relative;
-  width: 60px; 
-  height: 80px; 
+  width: 60px;
+  height: 80px;
   perspective: 1000px;
-  margin: 0 10px; 
+  margin: 0 10px;
 }
 
-.digit-top, .digit-bottom {
+.digit-top,
+.digit-bottom {
   position: absolute;
   width: 100%;
   height: 50%;
@@ -487,30 +481,30 @@ main {
 /* Calendar container styles */
 .calendar-container {
   position: absolute;
-  top: 280px; 
-  right: 50px; 
+  top: 280px;
+  right: 50px;
   width: 100%;
-  max-width: 280px; 
+  max-width: 280px;
   box-sizing: border-box;
   background: white;
   border: 2px solid #333;
   border-radius: 10px;
   padding: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   background-color: #fff;
-  z-index: 10; 
+  z-index: 10;
 }
 
 .calendar-header {
   text-align: center;
-  font-size: 16px; 
+  font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .calendar-table {
-  width: 100%; 
+  width: 100%;
   border-collapse: collapse;
 }
 
@@ -518,13 +512,13 @@ main {
   background-color: #000000;
   color: #ffffff;
   font-weight: bold;
-  padding: 4.5px; 
+  padding: 4.5px;
   text-align: center;
   border-bottom: 1px solid #ddd;
 }
 
 .calendar-table td {
-  width: 14.28%; 
+  width: 14.28%;
   height: 40px;
   text-align: center;
   vertical-align: middle;
@@ -554,7 +548,7 @@ main {
 .sos-button {
   position: absolute;
   bottom: 20px;
-  right: 60px; 
+  right: 60px;
   background-color: rgb(238, 61, 61);
   color: white;
   font-size: 15px;
@@ -564,7 +558,7 @@ main {
   border-radius: 120px;
   text-align: center;
   cursor: pointer;
-  z-index: 10; 
+  z-index: 10;
   padding: 60px;
 }
 
@@ -575,25 +569,24 @@ main {
 .main-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; 
+  min-height: 100vh;
 }
 
 .content {
-  flex: 1; 
+  flex: 1;
 }
 
-
 .logout-btn {
-    background-color: #ff7f7f;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    font-family: 'Comic Sans MS', sans-serif;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 10px;
+  background-color: #ff7f7f;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-family: "Comic Sans MS", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
 }
 
 .logout-btn:hover {
-    background-color: #ff4f4f;
+  background-color: #ff4f4f;
 }
