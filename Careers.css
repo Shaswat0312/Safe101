@@ -1,9 +1,13 @@
+* {
+    font-family: "Iceland";
+    font-style: normal;
+    font-variant: normal;
+    line-height: 26.4px;
+}
 
 main {
     padding: 20px 10%;
 }
-
-
 
 .open-positions .job-listing {
     background-color: white;

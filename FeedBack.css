@@ -1,9 +1,16 @@
+* {
+    font-family: "Iceland";
+    font-style: normal;
+    font-variant: normal;
+    line-height: 26.4px;
+}
 
 main {
     padding: 20px 10%;
 }
 
-h2, h3 {
+h2,
+h3 {
     color: #e91e63;
     font-family: 'Arial Black', Gadget, sans-serif;
 }
@@ -54,7 +61,7 @@ h2, h3 {
     cursor: pointer;
 }
 
-.feedback-form .stars input[type="radio"]:checked ~ label {
+.feedback-form .stars input[type="radio"]:checked~label {
     color: #e91e63;
 }
 

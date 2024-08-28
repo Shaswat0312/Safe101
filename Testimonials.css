@@ -1,9 +1,16 @@
+* {
+    font-family: "Iceland";
+    font-style: normal;
+    font-variant: normal;
+    line-height: 26.4px;
+}
 
 main {
     padding: 20px 10%;
 }
 
-h2, h3 {
+h2,
+h3 {
     color: #e91e63;
     font-family: 'Arial Black', Gadget, sans-serif;
     text-align: center;
@@ -37,7 +44,7 @@ h2, h3 {
 }
 
 .testimonial-card img {
-   
+
     border-radius: 50%;
     margin-bottom: 15px;
     width: 100px;
