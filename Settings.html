@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Safe101-Settings</title>
     <link rel="icon" type="image/x-icon" href="Logo.png" />
+    <link rel="stylesheet" href="Settings.css">
     <link rel="stylesheet" href="Navbar.css" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Patrick+Hand" />
 </head>
@@ -113,6 +114,141 @@
         </div>
     </div>
 
+
+    <div class="settings-container">
+        <h1>Settings</h1>
+        <div class="settings-tabs">
+            <button class="tab-button" data-tab="general">General</button>
+            <button class="tab-button" data-tab="notifications">Notifications</button>
+            <button class="tab-button" data-tab="privacy">Privacy</button>
+            <button class="tab-button" data-tab="security">Security</button>
+            <button class="tab-button" data-tab="appearance">Appearance</button>
+            <button class="tab-button" data-tab="emergency">Emergency</button>
+        </div>
+        <div class="settings-content">
+            <!-- General Settings -->
+            <div class="tab-content" id="general">
+                <h2>General Settings</h2>
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+
+            <!-- Notification Preferences -->
+            <div class="tab-content" id="notifications">
+                <h2>Notification Preferences</h2>
+                <div class="form-group">
+                    <label for="email-notifications">
+                        <input type="checkbox" id="email-notifications" name="email-notifications">
+                        Email Notifications
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="sms-notifications">
+                        <input type="checkbox" id="sms-notifications" name="sms-notifications">
+                        SMS Notifications
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="push-notifications">
+                        <input type="checkbox" id="push-notifications" name="push-notifications">
+                        Push Notifications
+                    </label>
+                </div>
+            </div>
+
+            <!-- Privacy Settings -->
+            <div class="tab-content" id="privacy">
+                <h2>Privacy Settings</h2>
+                <div class="form-group">
+                    <label for="profile-visibility">Profile Visibility:</label>
+                    <select id="profile-visibility" name="profile-visibility">
+                        <option value="public">Public</option>
+                        <option value="friends">Friends</option>
+                        <option value="private">Private</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="data-sharing">
+                        <input type="checkbox" id="data-sharing" name="data-sharing">
+                        Allow data sharing with partners
+                    </label>
+                </div>
+            </div>
+
+            <!-- Security Settings -->
+            <div class="tab-content" id="security">
+                <h2>Security Settings</h2>
+                <div class="form-group">
+                    <label for="two-factor-auth">
+                        <input type="checkbox" id="two-factor-auth" name="two-factor-auth">
+                        Enable Two-Factor Authentication
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="backup-email">Backup Email:</label>
+                    <input type="email" id="backup-email" name="backup-email">
+                </div>
+                <div class="form-group">
+                    <label for="security-questions">Security Questions:</label>
+                    <select id="security-questions" name="security-questions">
+                        <option value="mother-maiden">Mother's Maiden Name</option>
+                        <option value="pet-name">First Pet's Name</option>
+                        <option value="birth-city">City of Birth</option>
+                    </select>
+                    <input type="text" id="security-answer" name="security-answer" placeholder="Answer">
+                </div>
+            </div>
+
+            <!-- Appearance Settings -->
+            <div class="tab-content" id="appearance">
+                <h2>Appearance Settings</h2>
+                <div class="form-group">
+                    <label for="theme-color">Theme Color:</label>
+                    <input type="color" id="theme-color" name="theme-color" value="#ffffff">
+                </div>
+                <div class="form-group">
+                    <label for="font-size">Font Size:</label>
+                    <select id="font-size" name="font-size">
+                        <option value="small">Small</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="background-image">Background Image:</label>
+                    <input type="file" id="background-image" name="background-image" accept="image/*">
+                </div>
+            </div>
+
+            <!-- Emergency Contacts -->
+            <div class="tab-content" id="emergency">
+                <h2>Emergency Contacts</h2>
+                <div class="form-group">
+                    <label for="contact-name">Name:</label>
+                    <input type="text" id="contact-name" name="contact-name">
+                </div>
+                <div class="form-group">
+                    <label for="contact-phone">Phone Number:</label>
+                    <input type="tel" id="contact-phone" name="contact-phone">
+                </div>
+                <div class="form-group">
+                    <label for="contact-relation">Relation:</label>
+                    <input type="text" id="contact-relation" name="contact-relation">
+                </div>
+                <button type="button" id="add-contact">Add Contact</button>
+                <div id="contact-list">
+                    <!-- List of added contacts will appear here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
   <footer class="footer">
     <div class="footer-content">
       <div class="footer-logo">
@@ -165,6 +301,7 @@
 
 
 
+  <script src="Settings.js"></script>
   <script src="Base.js"></script>
 </body>
 

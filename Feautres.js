@@ -14,3 +14,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
   updateClock(); // Initial call to set the clock immediately on page load
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('geolocation-btn').addEventListener('click', function() {
+      window.location.href = 'https://www.google.com/maps';
+  });
+
+  document.getElementById('contacts-btn').addEventListener('click', function() {
+      window.location.href = 'contacts.html';
+  });
+});
