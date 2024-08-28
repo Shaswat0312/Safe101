@@ -374,7 +374,7 @@ flex: 1;
 button {
   font-size: x-large;
   height: 100px;
-  margin: 20px 20px;
+  margin: 15px 20px;
   border-radius: 30px;
   background-color: rgba(3, 54, 255, 0.1);
   transition: transform 0.2s, background-color 0.2s;
@@ -441,11 +441,11 @@ main {
 }
 
 .flip-digit {
-  position: relative;
+  /* position: relative;
   width: 60px;
-  height: 80px;
+  height: 80px; */
   perspective: 1000px;
-  margin: 0 10px;
+  margin: 0 12px;
 }
 
 .digit-top,
@@ -501,7 +501,7 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   font-family: "Arial", sans-serif;
   background-color: #fff;
-  z-index: 10;
+  z-index: 5;
 }
 
 .calendar-header {
@@ -555,23 +555,23 @@ main {
 /* SOS button styles */
 .sos-button {
   position: absolute;
-  bottom: 20px;
-  right: 60px;
-  background-color: rgb(238, 61, 61);
+  bottom: -60px;
+  right: 65px;
+  background-color: rgb(255, 0, 0);
   color: white;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bolder;
   padding: 10px 20px;
   border: none;
-  border-radius: 120px;
+  border-radius: 100px;
   text-align: center;
   cursor: pointer;
   z-index: 10;
-  padding: 60px;
+  padding: 50px;
 }
 
 .sos-button:hover {
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(197, 0, 0);
 }
 
 .main-container {
