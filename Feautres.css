@@ -1,9 +1,9 @@
-html, body {
+/* html, body {
   height: 500%;
   margin: 0;
   padding: 0;
  
-}
+} */
 
 /* header {
   background-color: #2f5fe2;
@@ -20,7 +20,7 @@ html, body {
   color: #f6f6f6;
 } */
 
-nav {
+/* nav {
   display: flex;
   width: 100%;
   padding-top: 25px;
@@ -91,20 +91,20 @@ nav .logo h1 {
   font-weight: bold;
   border-radius: 8px;
   transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
-}
+} */
 
 /* Hover effect */
-.menu li a:hover {
+/* .menu li a:hover {
   background-color: #e67e22; 
   color: #000000;
   transform: scale(1.2); 
   font-weight: bolder;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); 
   border-radius: 20px;
-}
+} */
 
 /* Active button styling */
-.menu li a.active {
+/* .menu li a.active {
   font-size: x-large;
   background-color: #ffffff; 
   color: #000000;
@@ -132,12 +132,10 @@ nav .logo h1 {
   width: 40px;
   border-radius: 50%;
   color: white;
-}
-
-
+} */
 
 /* Sidebar Styles */
-.sidebar {
+/* .sidebar {
   position: fixed;
   top: 0;
   left: 0;
@@ -152,38 +150,38 @@ nav .logo h1 {
   z-index: 20; 
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   color: #000000; 
-}
+} */
 
 /* Show Sidebar */
-.sidebar.show {
+/* .sidebar.show {
   transform: translateX(0);
-}
+} */
 
 /* Sidebar Header Styles */
-.sidebar-header {
+/* .sidebar-header {
   display: flex;
   align-items: center;
   justify-content: space-between; 
   padding: 20px;
   font-size: 10px;
-}
+} */
 
 /* Close Button Styles */
-.close-sidebar {
+/* .close-sidebar {
   background: transparent;
   border: none;
   font-size: 24px;
   cursor: pointer;
   color: #000000; 
   transition: color 0.3s ease;
-}
+} */
 
-.close-sidebar:hover {
+/* .close-sidebar:hover {
   color: #007BFF; 
-}
+} */
 
 /* Sidebar Menu Styles */
-.sidebar-menu {
+/* .sidebar-menu {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -217,16 +215,16 @@ nav .logo h1 {
   width: 20px;
   height: 20px;
   color: black;
-}
+} */
 
 /* Hide sidebar by default */
-.sidebar {
+/* .sidebar {
   transform: translateX(-100%);
-}
+} */
 
 
  /* Sidebar Right */
- .sidebar-right {
+ /* .sidebar-right {
   height: 100%;
   width: 300px; 
   position: fixed;
@@ -333,9 +331,10 @@ nav .logo h1 {
   position: absolute;
   top: 20px;
   right: 20px;
-}
+} */
+
 /* Make sure the footer is always at the bottom */
-body, html {
+/* body, html {
 margin: 0;
 padding: 0;
 height: 100%;
@@ -349,7 +348,7 @@ min-height: 100vh;
 
 .main-content {
 flex: 1;
-}
+} */
 
 .left-section {
   width: 30%;

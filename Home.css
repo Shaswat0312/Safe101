@@ -1,16 +1,30 @@
-body
-{
+* {
+    font-family: "Cookie";
+    /* font-size: 0.9rem; */
+    font-style: normal;
+    font-variant: normal;
+    /* font-weight: 700; */
+    line-height: 26.4px;
+}
+
+body {
     width: 99vw;
 }
+
+.bg1 {
+    background: url(https://wallpapercave.com/wp/2IiBThV.jpg) no-repeat center center/cover;
+}
+
+.bg {
+    background-image: url(https://wallpapercave.com/wp/EUUoCAC.jpg);
+}
+
 .container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: white;
-    border-radius: 15px;
-   
 }
 
 .image-container img {
@@ -48,11 +62,12 @@ a:hover {
 
     text-align: center;
 }
-.how-different-section
-{
+
+.how-different-section {
     display: flex;
-   
+
 }
+
 .how-different-section h1 {
     font-size: 46px;
     color: #333;
@@ -60,7 +75,8 @@ a:hover {
 }
 
 .highlight {
-    color: #ff007f; /* Pinkish highlight */
+    color: #ff007f;
+    /* Pinkish highlight */
 }
 
 .description {
@@ -82,7 +98,7 @@ a:hover {
     background-color: white;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
     flex: 1;
     min-width: 250px;
     max-width: 30%;
@@ -91,8 +107,8 @@ a:hover {
 }
 
 .feature-box img {
-    max-width: 100px;
-    margin-bottom: 20px;
+    max-width: 150px;
+    border-radius: 9px;
 }
 
 .feature-box h3 {
@@ -114,7 +130,8 @@ a:hover {
 }
 
 .how-it-works h1 span {
-    color: #ff4081; /* Pink color */
+    color: #ff4081;
+    /* Pink color */
 }
 
 .how-it-works p {
@@ -135,9 +152,6 @@ a:hover {
 .image-container img {
     max-width: 100%;
     height: auto;
-   
-    border-radius: 10px;
-    margin-right: 40px;
 }
 
 .steps {
@@ -158,7 +172,8 @@ a:hover {
 }
 
 .steps li span {
-    color: #ff4081; /* Pink color */
+    color: #ff4081;
+    /* Pink color */
     font-weight: bold;
 }
 
@@ -279,30 +294,35 @@ a:hover {
     box-sizing: border-box;
 }
 
-.recaptcha {
-    margin-bottom: 20px;
-    text-align: center;
-    color: #666;
-    font-size: 0.9em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    background-color: #eee;
-    border-radius: 25px;
-}
-
 .newsletter-form button {
-    padding: 15px 30px;
-    font-size: 1.2em;
+    padding: 10px 25px;
+    font-size: 1.2rem;
     color: #fff;
     background-color: #ff007f;
     border: none;
     border-radius: 25px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    margin-bottom: 5px;
+    /* transition: background-color 0.3s; */
 }
 
 .newsletter-form button:hover {
-    background-color: #e60073;
+    background-color: #d80b71;
+}
+
+.recaptcha button {
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #a3a3a3;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    color: #eee;
+    border-radius: 25px;
+}
+
+.recaptcha button:hover {
+    background-color: #666;
 }
