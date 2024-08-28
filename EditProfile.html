@@ -113,44 +113,140 @@
             <button class="logout-btn" onclick="logout()">LOGOUT</button>
         </div>
     </div>
+    
+
+
     <div class="container">
         <h1>Edit Profile</h1>
         <form id="edit-profile-form">
-            <div class="form-group">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
-                <small class="error-message" id="name-error"></small>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <small class="error-message" id="email-error"></small>
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required>
-                <small class="error-message" id="phone-error"></small>
-            </div>
-            <div class="form-group">
-                <label for="location">Location:</label>
-                <input type="text" id="location" name="location" required>
-                <small class="error-message" id="location-error"></small>
-            </div>
-            <div class="form-group">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-                <small class="error-message" id="password-error"></small>
-            </div>
-            <div class="form-group">
-                <label for="confirm-password">Confirm Password:</label>
-                <input type="password" id="confirm-password" name="confirm-password" required>
-                <small class="error-message" id="confirm-password-error"></small>
-            </div>
-            <div class="form-group">
-                <label for="profile-pic">Profile Picture:</label>
-                <input type="file" id="profile-pic" name="profile-pic" accept="image/*">
-                <div id="profile-pic-preview"></div>
-            </div>
+            <!-- Personal Information Section -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <small class="error-message" id="name-error"></small>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <small class="error-message" id="email-error"></small>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <small class="error-message" id="phone-error"></small>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" required>
+                    <small class="error-message" id="location-error"></small>
+                </div>
+                <div class="form-group">
+                    <label for="bio">Bio:</label>
+                    <textarea id="bio" name="bio" maxlength="250" rows="4"></textarea>
+                    <small class="character-count" id="bio-count">0/250</small>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+            </fieldset>
+    
+            <!-- Security Section -->
+            <fieldset>
+                <legend>Security</legend>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <small class="error-message" id="password-error"></small>
+                    <small class="password-strength" id="password-strength"></small>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <small class="error-message" id="confirm-password-error"></small>
+                </div>
+                <div class="form-group">
+                    <label for="two-factor-auth">Two-Factor Authentication:</label>
+                    <input type="checkbox" id="two-factor-auth" name="two-factor-auth">
+                    <label for="two-factor-auth">Enable Two-Factor Authentication</label>
+                </div>
+            </fieldset>
+    
+            <!-- Preferences Section -->
+            <fieldset>
+                <legend>Preferences</legend>
+                <div class="form-group">
+                    <label for="language">Preferred Language:</label>
+                    <select id="language" name="language">
+                        <option value="english">English</option>
+                        <option value="spanish">Spanish</option>
+                        <option value="french">French</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="notifications">Notification Settings:</label>
+                    <select id="notifications" name="notifications">
+                        <option value="email">Email Notifications</option>
+                        <option value="sms">SMS Notifications</option>
+                        <option value="push">Push Notifications</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="interests">Interests:</label>
+                    <div class="interests-group">
+                        <input type="checkbox" id="interest1" name="interests" value="technology">
+                        <label for="interest1">Technology</label>
+                        <input type="checkbox" id="interest2" name="interests" value="sports">
+                        <label for="interest2">Sports</label>
+                        <input type="checkbox" id="interest3" name="interests" value="music">
+                        <label for="interest3">Music</label>
+                        <input type="checkbox" id="interest4" name="interests" value="art">
+                        <label for="interest4">Art</label>
+                    </div>
+                </div>
+            </fieldset>
+    
+            <!-- Social Media Section -->
+            <fieldset>
+                <legend>Social Media</legend>
+                <div class="form-group">
+                    <label for="twitter">Twitter:</label>
+                    <input type="url" id="twitter" name="twitter" placeholder="https://twitter.com/username">
+                </div>
+                <div class="form-group">
+                    <label for="linkedin">LinkedIn:</label>
+                    <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/username">
+                </div>
+                <div class="form-group">
+                    <label for="instagram">Instagram:</label>
+                    <input type="url" id="instagram" name="instagram" placeholder="https://instagram.com/username">
+                </div>
+            </fieldset>
+    
+            <!-- Profile Picture Section -->
+            <fieldset>
+                <legend>Profile Picture</legend>
+                <div class="form-group">
+                    <input type="file" id="profile-pic" name="profile-pic" accept="image/*">
+                    <div id="profile-pic-preview"></div>
+                </div>
+            </fieldset>
+    
+            <!-- Account Section -->
+            <fieldset>
+                <legend>Account</legend>
+                <div class="form-group">
+                    <label for="status">Account Status:</label>
+                    <input type="text" id="status" name="status" value="Active" readonly>
+                </div>
+                <div class="form-group">
+                    <button type="button" id="deactivate-button">Deactivate Account</button>
+                </div>
+            </fieldset>
+    
+            <!-- Buttons Section -->
             <div class="button-group">
                 <button type="submit" id="save-button">Save Changes</button>
                 <button type="button" id="cancel-button">Cancel</button>
@@ -215,7 +311,7 @@
 
   <script src="Base.js"></script>
   <script>
-    document.getElementById('profile-pic').addEventListener('change', function(event) {
+  document.getElementById('profile-pic').addEventListener('change', function(event) {
     const previewContainer = document.getElementById('profile-pic-preview');
     const file = event.target.files[0];
     if (file) {
@@ -225,6 +321,31 @@
         };
         reader.readAsDataURL(file);
     }
+});
+
+document.getElementById('bio').addEventListener('input', function() {
+    const bioText = this.value;
+    const bioCount = document.getElementById('bio-count');
+    bioCount.textContent = `${bioText.length}/250`;
+});
+
+document.getElementById('password').addEventListener('input', function() {
+    const passwordStrength = document.getElementById('password-strength');
+    const password = this.value;
+    let strength = '';
+
+    if (password.length < 6) {
+        strength = 'Weak';
+        passwordStrength.style.color = 'red';
+    } else if (password.length < 10) {
+        strength = 'Medium';
+        passwordStrength.style.color = 'orange';
+    } else {
+        strength = 'Strong';
+        passwordStrength.style.color = 'green';
+    }
+
+    passwordStrength.textContent = `Password strength: ${strength}`;
 });
 
 document.getElementById('edit-profile-form').addEventListener('submit', function(event) {
@@ -272,14 +393,20 @@ document.getElementById('edit-profile-form').addEventListener('submit', function
     }
 
     if (isValid) {
-        // Handle form submission (e.g., send data to server)
         alert('Profile updated successfully!');
     }
 });
 
 document.getElementById('cancel-button').addEventListener('click', function() {
     if (confirm('Are you sure you want to cancel? Unsaved changes will be lost.')) {
-        window.location.href = 'profile.html'; // Redirect to profile page or another page
+        window.location.href = 'profile.html';
+    }
+});
+
+document.getElementById('deactivate-button').addEventListener('click', function() {
+    if (confirm('Are you sure you want to deactivate your account? This action cannot be undone.')) {
+        // Handle account deactivation logic
+        alert('Account deactivated.');
     }
 });
 
@@ -289,9 +416,10 @@ function validateEmail(email) {
 }
 
 function validatePhone(phone) {
-    const re = /^[0-9]{10}$/;
+    const re = /^\d{10}$/;
     return re.test(phone);
 }
+
 
   </script>
 </body>
