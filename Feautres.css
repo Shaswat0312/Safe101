@@ -389,13 +389,14 @@ button:hover {
 button img {
   height: 54px;
   width: 54px;
-  padding-right: 0px;
+  /* padding-right: 0px; */
 }
 
 button {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0px 15px;
 }
 
 main {
