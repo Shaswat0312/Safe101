@@ -113,42 +113,52 @@
             <button class="logout-btn" onclick="logout()">LOGOUT</button>
         </div>
     </div>
-  <div class="container">
-    <h1>Edit Profile</h1>
-    <form id="edit-profile-form">
-        <div class="form-group">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required>
-        </div>
-        <div class="form-group">
-            <label for="location">Location:</label>
-            <input type="text" id="location" name="location" required>
-        </div>
-        <div class="form-group">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-        </div>
-        <div class="form-group">
-            <label for="confirm-password">Confirm Password:</label>
-            <input type="password" id="confirm-password" name="confirm-password" required>
-        </div>
-        <div class="form-group">
-            <label for="profile-pic">Profile Picture:</label>
-            <input type="file" id="profile-pic" name="profile-pic" accept="image/*">
-        </div>
-        <button type="submit">Save Changes</button>
-    </form>
-</div>
-
-
+    <div class="container">
+        <h1>Edit Profile</h1>
+        <form id="edit-profile-form">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                <small class="error-message" id="name-error"></small>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <small class="error-message" id="email-error"></small>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <small class="error-message" id="phone-error"></small>
+            </div>
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+                <small class="error-message" id="location-error"></small>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <small class="error-message" id="password-error"></small>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <small class="error-message" id="confirm-password-error"></small>
+            </div>
+            <div class="form-group">
+                <label for="profile-pic">Profile Picture:</label>
+                <input type="file" id="profile-pic" name="profile-pic" accept="image/*">
+                <div id="profile-pic-preview"></div>
+            </div>
+            <div class="button-group">
+                <button type="submit" id="save-button">Save Changes</button>
+                <button type="button" id="cancel-button">Cancel</button>
+                <button type="reset" id="reset-button">Reset</button>
+            </div>
+        </form>
+    </div>
+    
 
 
   <footer class="footer">
@@ -204,6 +214,86 @@
 
 
   <script src="Base.js"></script>
+  <script>
+    document.getElementById('profile-pic').addEventListener('change', function(event) {
+    const previewContainer = document.getElementById('profile-pic-preview');
+    const file = event.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            previewContainer.innerHTML = `<img src="${e.target.result}" alt="Profile Picture">`;
+        };
+        reader.readAsDataURL(file);
+    }
+});
+
+document.getElementById('edit-profile-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Form validation
+    let isValid = true;
+    const errorMessages = document.querySelectorAll('.error-message');
+    errorMessages.forEach(error => error.style.display = 'none');
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const password = document.getElementById('password').value.trim();
+    const confirmPassword = document.getElementById('confirm-password').value.trim();
+
+    if (name === '') {
+        isValid = false;
+        document.getElementById('name-error').textContent = 'Name is required';
+        document.getElementById('name-error').style.display = 'block';
+    }
+
+    if (email === '' || !validateEmail(email)) {
+        isValid = false;
+        document.getElementById('email-error').textContent = 'Valid email is required';
+        document.getElementById('email-error').style.display = 'block';
+    }
+
+    if (phone === '' || !validatePhone(phone)) {
+        isValid = false;
+        document.getElementById('phone-error').textContent = 'Valid phone number is required';
+        document.getElementById('phone-error').style.display = 'block';
+    }
+
+    if (password === '') {
+        isValid = false;
+        document.getElementById('password-error').textContent = 'Password is required';
+        document.getElementById('password-error').style.display = 'block';
+    }
+
+    if (password !== confirmPassword) {
+        isValid = false;
+        document.getElementById('confirm-password-error').textContent = 'Passwords do not match';
+        document.getElementById('confirm-password-error').style.display = 'block';
+    }
+
+    if (isValid) {
+        // Handle form submission (e.g., send data to server)
+        alert('Profile updated successfully!');
+    }
+});
+
+document.getElementById('cancel-button').addEventListener('click', function() {
+    if (confirm('Are you sure you want to cancel? Unsaved changes will be lost.')) {
+        window.location.href = 'profile.html'; // Redirect to profile page or another page
+    }
+});
+
+function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+}
+
+function validatePhone(phone) {
+    const re = /^[0-9]{10}$/;
+    return re.test(phone);
+}
+
+  </script>
 </body>
 
 </html>
