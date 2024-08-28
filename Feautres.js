@@ -22,4 +22,15 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('contacts-btn').addEventListener('click', function() {
       window.location.href = 'contacts.html';
   });
+
+  document.getElementById('surveillance-btn').addEventListener('click', function() {
+    window.location.href = 'https://snazzymaps.com/style/72543/assassins-creed-iv';
+});
+document.getElementById('hotspot-alert-btn').addEventListener('click', function() {
+  window.location.href = 'https://snazzymaps.com/style/72543/assassins-creed-iv';
+});
+document.getElementById('alert-attention-btn').addEventListener('click', function() {
+  window.location.href = 'https://snazzymaps.com/style/72543/assassins-creed-iv';
+});
+
 });
