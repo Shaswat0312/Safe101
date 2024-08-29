@@ -22,7 +22,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 20px 150px 0px 0px;
 }
 
 .image-container img {
@@ -80,7 +80,7 @@ a:hover {
 .description {
     font-size: 30px;
     margin-bottom: 40px;
-    color:  #e4e4e4;
+    color: #e4e4e4;
     max-width: 900px;
     margin: 0 auto 40px;
 }
