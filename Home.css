@@ -78,9 +78,9 @@ a:hover {
 }
 
 .description {
-    font-size: 28px;
+    font-size: 30px;
     margin-bottom: 40px;
-    color: #555;
+    color:  #e4e4e4;
     max-width: 900px;
     margin: 0 auto 40px;
 }
@@ -133,7 +133,7 @@ a:hover {
 }
 
 .how-it-works p {
-    font-size: 1.2em;
+    font-size: 1.9em;
     color: #666;
     max-width: 700px;
     margin: 0 auto 40px;
@@ -160,7 +160,7 @@ a:hover {
 .steps ol {
     list-style-type: decimal;
     padding-left: 20px;
-    font-size: 1.2em;
+    font-size: 1.7em;
     color: #333;
 }
 
@@ -215,7 +215,7 @@ a:hover {
     background: none;
     border: none;
     text-align: left;
-    font-size: 1.2em;
+    font-size: 1.7em;
     font-weight: bold;
     padding: 15px 0;
     cursor: pointer;
@@ -269,7 +269,7 @@ a:hover {
 }
 
 .newsletter-section p {
-    font-size: 1.2em;
+    font-size: 1.8em;
     color: #666;
     margin-bottom: 30px;
 }
@@ -287,7 +287,7 @@ a:hover {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 25px;
-    font-size: 1em;
+    font-size: 1.2em;
     color: #333;
     box-sizing: border-box;
 }

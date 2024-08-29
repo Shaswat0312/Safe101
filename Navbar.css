@@ -179,7 +179,7 @@ body {
   }
   
   .close-sidebar:hover {
-    color: #007BFF; 
+    color: #8e49dc; 
   }
   
   /* Sidebar Menu Styles */
@@ -195,13 +195,13 @@ body {
   }
   
   .sidebar-menu li {
-    padding: 15px 20px;
+    padding: 15px 30px;
   }
   
   .sidebar-menu li a {
     text-decoration: none;
     color: #000000;
-    font-size: 16px;
+    font-size: 20px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -210,7 +210,11 @@ body {
   
   .sidebar-menu li a:hover {
     color: #000000;
-    background-color: #ff00e1; 
+    background-color: #8e49dc; 
+    border-radius: 30px;
+    padding: 5px 0px;
+    padding-left: 20px;
+    font-weight: bold;
   }
   
   .sidebar-menu li a img {
@@ -258,9 +262,9 @@ body {
 }
 
 .sidebar-content .logo {
-    width: 50px;
+    width: 55px;
     /* height: 50px; */
-    /* margin-bottom: 10px; */
+    margin: -67px 0px 40px 0px;
 }
 
 .sidebar-content h1 {
