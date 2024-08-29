@@ -4,12 +4,6 @@ function toggleSidebar() {
   sidebar.classList.toggle("show");
 }
 
-
-
-
-
-
-
 // Add event listener to the hamburger menu
 document
   .querySelector(".hamburger-menu img")
@@ -31,10 +25,14 @@ document.addEventListener("click", (event) => {
   }
 });
 
+
+
+
 // Open Sidebar
 document.getElementById("profile-pic").addEventListener("click", function () {
   document.getElementById("sidebar-right").classList.add("open");
 });
+
 
 // Close Sidebar
 document.getElementById("close-sidebar").addEventListener("click", function () {
