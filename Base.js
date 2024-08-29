@@ -4,6 +4,9 @@ function toggleSidebar() {
   sidebar.classList.toggle('show');
 }
 
+
+
+
 // Add event listener to the hamburger menu
 document.querySelector('.hamburger-menu img').addEventListener('click', toggleSidebar);
 
