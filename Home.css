@@ -186,6 +186,10 @@ a:hover {
     margin-bottom: 40px;
 }
 
+.faq-section h1 span {
+    color: #ff4081;
+}
+
 .faq-content {
     display: flex;
     justify-content: center;
@@ -267,6 +271,9 @@ a:hover {
     margin-bottom: 10px;
 }
 
+.newsletter-section h1 span {
+    color: #ff4081;
+}
 .newsletter-section p {
     font-size: 1.8em;
     color: #666;
