@@ -9,11 +9,15 @@ main {
     padding: 20px 10%;
 }
 
-h2,
-h3 {
+.bg1 {
+    background: url(https://images.pexels.com/photos/7130555/pexels-photo-7130555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat center center/cover;
+}
+
+h2, h3 {
     color: #e91e63;
-    font-family: 'Arial Black', Gadget, sans-serif;
+    /* font-family: 'Arial Black', Gadget, sans-serif; */
     text-align: center;
+    font-size: 2em;
 }
 
 /* Testimonials Styles */
@@ -44,7 +48,6 @@ h3 {
 }
 
 .testimonial-card img {
-
     border-radius: 50%;
     margin-bottom: 15px;
     width: 100px;

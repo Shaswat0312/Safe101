@@ -14,6 +14,10 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
+.bg1 {
+    background: url(https://images.pexels.com/photos/7130555/pexels-photo-7130555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat center center/cover;
+}
+
 header {
     text-align: center;
     margin-bottom: 40px;
