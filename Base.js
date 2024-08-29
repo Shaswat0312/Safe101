@@ -25,13 +25,16 @@ document.addEventListener("click", (event) => {
   }
 });
 
-
-
-
 // Open Sidebar
 document.getElementById("profile-pic").addEventListener("click", function () {
   document.getElementById("sidebar-right").classList.add("open");
 });
+
+
+
+
+
+
 
 
 // Close Sidebar
