@@ -1,8 +1,8 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
+* {
+    font-family: "Patrick Hand";
+    font-style: normal;
+    font-variant: normal;
+    line-height: 26.4px;
 }
 
 .settings-container {
@@ -14,11 +14,16 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+.bg1 {
+    background: url(https://images.pexels.com/photos/7130555/pexels-photo-7130555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat center center/cover;
+}
+
 h1 {
     text-align: center;
     color: #333333;
     font-size: 2.5em;
     margin-bottom: 30px;
+    text-shadow: 2px 2px 3px  rgb(173, 41, 255);
 }
 
 .settings-tabs {
@@ -28,18 +33,21 @@ h1 {
 }
 
 .tab-button {
-    background-color: #007bff;
-    color: white;
+    background-color: #885aff;
+    color: rgb(0, 0, 0);
     border: none;
-    border-radius: 8px;
+    border-radius: 30px;
     padding: 12px 25px;
     cursor: pointer;
-    font-size: 1.1em;
+    font-size: 1.5em;
     transition: background-color 0.3s, transform 0.3s;
+    text-shadow: 0.1px 0.1px 1px  rgb(0, 0, 0);
+    margin: 0px 5px;
 }
 
 .tab-button:hover {
-    background-color: #0056b3;
+    background-color: #4a13a3;
+    color: #ffffff;
     transform: translateY(-2px);
 }
 
