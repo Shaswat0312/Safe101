@@ -84,10 +84,10 @@ header p {
 
 .team h2 {
     font-size: 2.8em;
-    color: #5b27c4;
+    color: #774ecb;
     margin-bottom: 20px;
     text-align: center;
-    text-shadow: 0.1px 0.1px 2px  rgb(173, 41, 255);
+    text-shadow: 0.1px 0.1px 2px  #6032bb;
 }
 
 .team-grid {
@@ -116,7 +116,7 @@ header p {
     height: 130px;
     object-fit: cover;
     margin-bottom: 15px;
-    border: 4px solid #5b27c4;
+    border: 4px solid #774ecb;
 }
 
 .team-member h3 {
@@ -136,10 +136,10 @@ header p {
 
 .partners h2 {
     font-size: 2.8em;
-    color: #5b27c4;
+    color: #774ecb;
     margin-bottom: 20px;
     text-align: center;
-    text-shadow: 0.1px 0.1px 2px  rgb(173, 41, 255);
+    text-shadow: 0.1px 0.1px 2px  #6032bb;
 }
 
 .partners-grid {
