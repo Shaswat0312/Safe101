@@ -61,8 +61,15 @@ a:hover {
     text-align: center;
 }
 
+.container1
+{
+    display: flex;
+    flex-direction: column;
+}
+
 .how-different-section {
     display: flex;
+    
 
 }
 
@@ -103,11 +110,21 @@ a:hover {
     width: 30vw;
     text-align: center;
     margin-left: 50px;
+    margin-bottom: 40px;
 }
 
 .feature-box img {
-    max-width: 150px;
+    width: 180px;
     border-radius: 9px;
+}
+.ft1 img
+{
+ margin-bottom: 50px;
+}
+
+.ft2 img
+{
+    margin-bottom: 80px;
 }
 
 .feature-box h3 {
