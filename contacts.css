@@ -38,6 +38,7 @@ h1 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 100%; /* Make sure it fills the grid cell */
     box-sizing: border-box; /* Include padding and border in the element’s total width and height */
+    border: 2px solid palevioletred;
 }
 
 .contact-box:hover {
