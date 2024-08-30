@@ -15,13 +15,13 @@ main {
 
 .intro h2{
     color: #e91e63;
-    font-size: 2em;
+    font-size: 2.3em;
     /* font-family: 'Arial Black', Gadget, sans-serif; */
 }
 
 .intro h3{
     color: #e91e63;
-    font-size: 1.5em;
+    font-size: 1.8em;
     /* font-family: 'Arial Black', Gadget, sans-serif; */
 }
 
@@ -42,7 +42,7 @@ main {
 
 .feedback-form label {
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.29em;
 }
 
 .feedback-form input[type="text"],
