@@ -14,8 +14,8 @@ body {
     border-radius: 12px;
     box-shadow: 0 4px 10px rgb(104, 104, 104);
 }
-.organization-container header
-{
+
+.organization-container header {
     display: flex;
     flex-direction: column;
     padding-top: 2px;
@@ -30,8 +30,7 @@ body {
     background-image: url(https://wallpapercave.com/wp/wp8884851.jpg);
 }
 
-body
-{
+body {
     background: url(https://images.pexels.com/photos/7130555/pexels-photo-7130555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat center center/cover;
 }
 
@@ -42,7 +41,7 @@ header {
 
 header h1 {
     color: #ffffff;
-    text-shadow: 1px 1px 3px  rgb(0, 0, 0);
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
     font-size: 3em;
     margin-bottom: 10px;
 }
@@ -62,17 +61,20 @@ header p {
     border-radius: 8px;
 }
 
-.mission, .vision {
+.mission,
+.vision {
     width: 45%;
 }
 
-.mission h2, .vision h2 {
+.mission h2,
+.vision h2 {
     color: #5b27c4;
     font-size: 2em;
     margin-bottom: 15px;
 }
 
-.mission p, .vision p {
+.mission p,
+.vision p {
     color: #333333;
     font-size: 1.1em;
     line-height: 1.6;
@@ -87,7 +89,7 @@ header p {
     color: #774ecb;
     margin-bottom: 20px;
     text-align: center;
-    text-shadow: 0.1px 0.1px 2px  #6032bb;
+    text-shadow: 0.1px 0.1px 2px #6032bb;
 }
 
 .team-grid {
@@ -101,7 +103,7 @@ header p {
     border-radius: 12px;
     padding: 20px;
     text-align: center;
-    box-shadow: 0px 1px 10px rgb(85, 85, 85);
+    box-shadow: 0px 1px 10px #7a37ff;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -116,7 +118,8 @@ header p {
     height: 130px;
     object-fit: cover;
     margin-bottom: 15px;
-    border: 4px solid #774ecb;
+    border: 2px solid #9966ff;
+    box-shadow: 0px 1px 10px #7a37ff;
 }
 
 .team-member h3 {
@@ -139,7 +142,7 @@ header p {
     color: #774ecb;
     margin-bottom: 20px;
     text-align: center;
-    text-shadow: 0.1px 0.1px 2px  #6032bb;
+    text-shadow: 0.1px 0.1px 2px #6032bb;
 }
 
 .partners-grid {
