@@ -33,7 +33,7 @@ header {
 }
 
 .logo img {
-    height: 50px; /* Increased height of logo */
+    height: 60px; /* Increased height of logo */
     margin-right: 10px;
 }
 
@@ -98,7 +98,7 @@ main {
 
 .main-image {
     width: 700px; /* Fixed width for image */
-    height: 700px;
+    /* height: 700px; */
 }
 
 .text {
