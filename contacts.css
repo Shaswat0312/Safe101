@@ -37,6 +37,7 @@ h1 {
     gap: 20px;
     padding: 0; /* Remove padding for full-width */
     margin: 0; /* Remove margin for full-width */
+    margin-left: 20px;
 }
 
 .contact-box {
