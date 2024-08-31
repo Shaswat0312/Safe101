@@ -1,10 +1,31 @@
+* {
+    font-family: "Patrick Hand";
+    font-style: normal;
+    font-variant: normal;
+    line-height: 26.4px;
+}
+
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background: url(https://images.pexels.com/photos/7130555/pexels-photo-7130555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat center center/cover;
+}
+
 .container {
     max-width: 1300px;
     margin: auto 100px;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: rgb(248, 240, 255);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    text-align: center;
+    color: #774ecb;
+    text-shadow: 0.1px 0.1px 2px #6032bb;
+    font-size: 2.3em;
 }
 
 h1 {
@@ -20,10 +41,10 @@ fieldset {
 }
 
 legend {
-    font-size: 18px;
+    font-size: 1.5em;
     font-weight: bold;
+    color: #774ecb;
     padding: 0 10px;
-    color: #333;
 }
 
 .form-group {
@@ -31,6 +52,8 @@ legend {
 }
 
 label {
+    font-size: 1.1em;
+    color: #774ecb;
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
